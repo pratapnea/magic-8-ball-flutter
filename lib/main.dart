@@ -9,6 +9,17 @@ void main() => runApp(
 class BallPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blue.shade900,
+        title: Title(
+          color: null,
+          child: Text('Ask Me Anything'),
+        ),
+      ),
+      body: Container(
+        color: Colors.blue,
+      ),
+    );
   }
 }
